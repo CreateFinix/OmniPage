@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Aliens - Ben 10</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">Catálogo de Aliens - Ben 10</h1>
+      <button class="btn-toggle" onclick="toggleMode()"><i class="bi bi-sun"></i>Modo Claro/Escuro</button>
+      <input type="text" id="search" placeholder="Buscar Alien..." oninput="searchAliens()" />
+      <button class="btn-toggle" onclick="randomAlien()">Alien Aleatório</button>
+    </header>
+
+    <div class="container mt-5">
+      <div class="row mt-4" id="alien-cards">
+        <!-- Cartões dos aliens serão inseridos aqui via JavaScript -->
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Catálogo de Aliens - Ben 10 | Desenvolvido por Theuz</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
